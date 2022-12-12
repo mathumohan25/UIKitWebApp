@@ -1,0 +1,1 @@
+dotnet new %1 -n %2 -o %3

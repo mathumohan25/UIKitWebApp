@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Templates>
+	<Template Category="Form" Name="LoginPage">
+		<Dependencies>
+			<File Name="LoginPage.xaml" Folder="Views"></File>
+			<File Name="LoginPage.xaml.cs" Folder="Views"></File>
+			<File Name="LoginPageViewModel.cs" Folder="ViewModels"></File>
+			<File Name="Data.cs" Folder="Models"></File>
+		</Dependencies>		
+	</Template>
+	<Template Category="Form" Name="Logout">
+		<Dependencies>
+			<File Name="LogoutPage.xaml" Folder="Views"></File>
+			<File Name="LogoutPage.xaml.cs" Folder="Views"></File>
+			<!--<File Name="LogoutPageViewModel.cs" Folder="ViewModels"></File>-->
+			<File Name="Data.cs" Folder="Models"></File>
+		</Dependencies>
+	</Template>
+</Templates>
