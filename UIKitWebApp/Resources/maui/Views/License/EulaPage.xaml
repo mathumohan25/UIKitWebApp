@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUITemplate.EulaPage"
+             NavigationPage.HasNavigationBar="True"
+             Padding="0">
+    <NavigationPage.TitleView Padding="0">
+        <Grid BackgroundColor="{DynamicResource Tertiary}"
+              Padding="0"
+              HorizontalOptions="FillAndExpand">
+            <Label Text="EULA (Terms of Service)"
+               TextColor="White"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               FontSize="16"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <Grid VerticalOptions="FillAndExpand"
+           Margin="0,10,0,10" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Margin="0,10,0,0" 
+            Text="TERMS OF SERVICES"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <ScrollView Grid.Row="1"
+                    Margin="20,0,20,10"
+                    HorizontalOptions="FillAndExpand">
+            <Label HorizontalTextAlignment="Center"
+                   FontSize="14">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                              FontSize="14"/>
+                        <Span Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                              FontSize="14"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </ScrollView>
+        <Grid Grid.Row="2"
+              ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0"
+                    CornerRadius="0"
+                    BackgroundColor="{DynamicResource Secondary}"
+                    Text="Reject"
+                    FontAttributes="Bold"
+                    TextColor="{DynamicResource Black}"/>
+            <Button Grid.Column="1"
+                    CornerRadius ="0"
+                    Text="Accept"
+                    FontAttributes="Bold"
+                    TextColor="{DynamicResource White}"/>
+        </Grid>
+    </Grid>
+</ContentPage>

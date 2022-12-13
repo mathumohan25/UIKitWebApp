@@ -1,19 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Templates>
-	<Template Category="Form" Name="LoginPage">
+	<Template Platform="maui" 
+			  Category="Form" 
+			  Name="LoginPage"
+			  ImageURL="https://templategenstg.blob.core.windows.net/images/LoginPage.png"
+			  Title ="Login page"
+			  Description="A simple login page for mobile applications.">
 		<Dependencies>
-			<File Name="LoginPage.xaml" Folder="Views"></File>
-			<File Name="LoginPage.xaml.cs" Folder="Views"></File>
-			<File Name="LoginPageViewModel.cs" Folder="ViewModels"></File>
-			<File Name="Data.cs" Folder="Models"></File>
+			<File Name="LoginPage.xaml"
+				  Folder="Views"></File>
+			<File Name="LoginPage.xaml.cs"
+				  Folder="Views"></File>
+			<File Name="LoginPageViewModel.cs"
+				  Folder="ViewModels"></File>
 		</Dependencies>		
 	</Template>
-	<Template Category="Form" Name="Logout">
+	<Template Platform="maui"
+			  Category="License"
+			  Name="EulaPage"
+			  ImageURL="https://templategenstg.blob.core.windows.net/images/EulaPage.png"
+			  Title ="Eula page"
+			  Description="A simple eula page for mobile applications.">
 		<Dependencies>
-			<File Name="LogoutPage.xaml" Folder="Views"></File>
-			<File Name="LogoutPage.xaml.cs" Folder="Views"></File>
-			<!--<File Name="LogoutPageViewModel.cs" Folder="ViewModels"></File>-->
-			<File Name="Data.cs" Folder="Models"></File>
+			<File Name="EulaPage.xaml"
+				  Folder="Views"></File>
+			<File Name="EulaPage.xaml.cs"
+				  Folder="Views"></File>
 		</Dependencies>
 	</Template>
 </Templates>

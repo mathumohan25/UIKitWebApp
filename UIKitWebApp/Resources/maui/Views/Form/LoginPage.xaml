@@ -2,11 +2,146 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUITemplate.LoginPage"
-             Title="LoginPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid Margin="20" RowSpacing="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="1"
+               Source="trimble_logo.png"
+               HorizontalOptions="Start"/>
+        <VerticalStackLayout Grid.Row="3" Spacing="20">
+            <VerticalStackLayout Spacing="20">
+                <Label Text="Sign In"
+                       FontSize="24"
+                       TextColor="#252A2E"
+                       FontFamily="OpenSansSemibold"/>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="New User?"
+                       FontSize="18"
+                       TextColor="#252A2E"
+                       FontFamily="OpenSansRegular"/>
+                    <Label Text="Create a Trimble ID"
+                       FontSize="18"
+                       TextColor="#217CBB"
+                       FontFamily="OpenSansRegular"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="20">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Username"
+                       FontSize="14"
+                       TextColor="#464B52"
+                       FontFamily="OpenSansSemiRegular"/>
+                    <Frame Padding="0" HeightRequest="50"
+                   BorderColor="#F3F3F3">
+                        <Entry/>
+                    </Frame>
+                </VerticalStackLayout>
+                <Button WidthRequest="100" 
+                        HorizontalOptions="End"
+                        CornerRadius="0"
+                        IsEnabled="False"
+                        Text="Next"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontFamily="OpenSansSemibold"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+        <Grid Grid.Row="4">
+            <BoxView HeightRequest="2"
+                     Color="#E3E3E3"/>
+            <Label Text="Or"
+                       HorizontalOptions="Center"
+                       BackgroundColor="White"
+                       WidthRequest="50"
+                       HorizontalTextAlignment="Center"/>
+        </Grid>
+        <VerticalStackLayout Grid.Row="5" Spacing="40">
+            <VerticalStackLayout Spacing="10">
+                <Frame HeightRequest="40"
+                    CornerRadius="0"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    Padding="0">
+                    <Grid HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      Margin="10,0,10,0">
+                        <Image Source="google.png"
+                           HorizontalOptions="Start"
+                           WidthRequest="24"
+                           HeightRequest="24"/>
+                        <Label Text="Sign in with Google"
+                           FontSize="14"
+                           TextColor="Black"
+                           FontFamily="OpenSansSemibold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+                <Frame HeightRequest="40"
+                    CornerRadius="0"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    Padding="0">
+                    <Grid HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      Margin="10,0,10,0">
+                        <Image Source="apple.png"
+                           HorizontalOptions="Start"
+                           WidthRequest="24"
+                           HeightRequest="24"/>
+                        <Label Text="Sign in with Apple"
+                           FontSize="14"
+                           TextColor="Black"
+                           FontFamily="OpenSansSemibold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+                <Frame HeightRequest="40"
+                    CornerRadius="0"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    Padding="0">
+                    <Grid HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      Margin="10,0,10,0">
+                        <Image Source="microsoft.png" 
+                           HorizontalOptions="Start"
+                           WidthRequest="24"
+                           HeightRequest="24"/>
+                        <Label Text="Sign in with Microsoft"
+                           FontSize="14"
+                           TextColor="Black"
+                           FontFamily="OpenSansSemibold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label               
+               TextColor="#217CBB"
+               HorizontalOptions="Center"
+               Text="© Copyright 2022, Trimble Inc."/>
+                <Label Margin="0,0,0,5"
+               TextColor="#217CBB"
+               HorizontalOptions="Center"
+               Text="Do Not Sell My Personal Information"/>
+                <Label
+               TextColor="#217CBB"
+               HorizontalOptions="Center"
+               Text="© Copyright 2022, Trimble Inc."/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>       
+    </Grid>
 </ContentPage>
